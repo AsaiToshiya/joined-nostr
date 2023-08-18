@@ -21,7 +21,7 @@ const fetchOldestPost = async (
     await pool.list(relays, [
       {
         authors: [author],
-        kinds: [1],
+        kinds: [Kind.Text],
         until,
       },
     ])
