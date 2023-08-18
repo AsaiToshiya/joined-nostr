@@ -48,11 +48,10 @@ export async function GET(
   const locale = request.nextUrl.searchParams.get("l");
   const offset = parseInt(request.nextUrl.searchParams.get("t")!);
   const offsetSeconds = (offset ? offset : 0) * 60 * 60;
-  return new Response(
-    locale
-      ? new Date((oldestPost.created_at + offsetSeconds) * 1000).toLocaleString(
-          locale
-        )
-      : oldestPost.created_at.toString()
-  );
+  const responseBody = locale
+    ? new Date((oldestPost.created_at + offsetSeconds) * 1000).toLocaleString(
+        locale
+      )
+    : oldestPost.created_at.toString();
+  return new Response(responseBody);
 }
