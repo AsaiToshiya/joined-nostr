@@ -1,3 +1,7 @@
+**This repository has moved to https://github.com/AsaiToshiya/nostr-toybox/tree/main/joined-nostr.**
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
